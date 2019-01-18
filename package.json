@@ -1,0 +1,10 @@
+{
+  "name": "personal-website",
+  "version": "0.1.0",
+  "description": "personal web site for training purposes",
+  "main": "index.js",
+  "repository": "https://github.com/Mathitos/personal-website",
+  "author": "Matheus Anzzulin",
+  "license": "MIT",
+  "private": false
+}
