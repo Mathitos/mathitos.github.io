@@ -4,13 +4,15 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "build"),
-    filename: "index.bundle.js"
+    filename: "index.bundle.js",
+    publicPath: '/'
   },
   mode: "development",
   devtool: "inline-source-map",
   devServer: {
     contentBase: "./build",
     port: 3000,
+    historyApiFallback: true,
     watchContentBase: true
   },
   module: {
