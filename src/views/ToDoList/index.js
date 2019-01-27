@@ -7,7 +7,8 @@ export default class ToDoList extends Component {
     super()
     this.state = {
       items: [],
-      currentItem: {text: '', key: ''}
+      currentItem: {text: '', key: ''},
+      indexNumber: 0
     }
   }
 
@@ -17,7 +18,20 @@ export default class ToDoList extends Component {
         items: this.state.items.concat(
           {
             value: item,
-            key: this.state.items.length
+            key: this.state.indexNumber
+          }
+        ),
+        indexNumber: this.state.indexNumber + 1
+      }
+    )
+  }
+
+  removeItem = itemKey => {
+    this.setState(
+      {
+        items: this.state.items.filter(
+          item => {
+            return item.key != itemKey
           }
         )
       }
@@ -27,7 +41,7 @@ export default class ToDoList extends Component {
   render() {
     return (
       <div>
-        <ItemsList items={this.state.items} />
+        <ItemsList items={this.state.items} eventOnDeleteElement={this.removeItem}/>
         <ToDoListCreateItem addItem={this.addItem} />
       </div>
     )
