@@ -1,6 +1,8 @@
 import React from 'react'
 import { Item } from './item'
 
+import './itemList.sass'
+
 export const ItemsList = (props) => {
     return(
         <div className='items-list'>
