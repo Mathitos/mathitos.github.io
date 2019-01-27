@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import ToDoListMain from './component'
+import ToDoListComponent from './component'
 
-class ToDoList extends Component {
+export default class ToDoList extends Component {
   constructor() {
     super()
     this.state = {
@@ -10,13 +10,14 @@ class ToDoList extends Component {
     }
   }
 
-  addItem = () => {
-    console.log('Hello Add Item')
+  addItem = e => {
+    e.preventDefault()
+    console.log('Hello World')
   }
 
   render() {
     return (
-      <ToDoListMain addItem={this.addItem}/>
+      <ToDoListComponent addItem={this.addItem}/>
     )
   }
 }
