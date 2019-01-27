@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import ToDoListComponent from './component'
+import ToDoListCreateItem from './createItem'
+import { ItemsList } from '../../components/ItemsList'
 
 export default class ToDoList extends Component {
   constructor() {
@@ -10,14 +11,25 @@ export default class ToDoList extends Component {
     }
   }
 
-  addItem = e => {
-    e.preventDefault()
-    console.log('Hello World')
+  addItem = item => {
+    this.setState(
+      {
+        items: this.state.items.concat(
+          {
+            value: item,
+            key: this.state.items.length
+          }
+        )
+      }
+    )
   }
 
   render() {
     return (
-      <ToDoListComponent addItem={this.addItem}/>
+      <div>
+        <ItemsList items={this.state.items} />
+        <ToDoListCreateItem addItem={this.addItem} />
+      </div>
     )
   }
 }
