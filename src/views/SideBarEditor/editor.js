@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 export default class Editor extends Component {
-    render() {
-        return EditorModal('lalala')
-    }
+  render() {
+    return EditorModal('lalala')
+  }
 }
 
 function EditorModal(text) {
-    return <div style={{flexGrow: 1}}> {text}</div>
+  return <div style={{ flexGrow: 1 }}> {text}</div>
 }

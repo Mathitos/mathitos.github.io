@@ -1,12 +1,13 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
-import { App } from './views/App';
+import { App } from './views/App'
 
 import 'normalize.css'
 
-render((
+render(
   <BrowserRouter>
     <App />
-  </BrowserRouter>
-), document.getElementById('root'));
+  </BrowserRouter>,
+  document.getElementById('root'),
+)
