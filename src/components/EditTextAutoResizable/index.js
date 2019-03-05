@@ -46,12 +46,12 @@ export default class EditTextAutoResizable extends Component {
   }
 
   increaseFontSize = () => {
-    this.setState({ fontSize: this.state.fontSize + 1 })
+    this.setState(state => ({ fontSize: state.fontSize + 1 }))
     this.resized = true
   }
 
   decreaseFontSize = () => {
-    this.setState({ fontSize: this.state.fontSize - 1 })
+    this.setState(state => ({ fontSize: state.fontSize - 1 }))
     this.resized = false
   }
 
