@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { App } from 'scenes/App'
 
 import 'normalize.css'
+import './styles/defaultStyles.sass'
 
 render(
   <BrowserRouter>
