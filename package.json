@@ -36,7 +36,7 @@
   "scripts": {
     "start": "webpack-dev-server --open  --host 0.0.0.0",
     "build": "npm run clean && npm run compile",
-    "deploy": "npm run clean && gh-pages -d build",
+    "deploy": "npm run build && gh-pages -d build",
     "clean": "rm -rf ./build/index.bundle.js",
     "compile": "NODE_ENV=production webpack --config ./webpack.config.js --progress"
   }
