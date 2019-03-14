@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import SideMenu from './sideMenu'
 import Editor from './editor'
 
+import './side-bar-editor.sass'
+
 export default class SideBarEditor extends Component {
   render() {
     return (
