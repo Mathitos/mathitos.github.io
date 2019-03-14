@@ -31,5 +31,11 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
+  },
+  resolve: {
+    alias: {
+      components: path.resolve(__dirname, 'src/components'),
+      scenes: path.resolve(__dirname, 'src/scenes'),
+    },
   }
 };
