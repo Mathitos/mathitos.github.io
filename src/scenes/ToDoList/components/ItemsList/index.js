@@ -1,7 +1,7 @@
 import React from 'react'
 import { Item } from './item'
 
-import './itemList.sass'
+import './item-list.sass'
 
 export const ItemsList = props => {
   return (

@@ -3,7 +3,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 const HeaderMenu = () => (
-  <div class="header__menu  flex flex-row flex-justify-space-around">
+  <div className="header__menu  flex flex-row flex-justify-space-around flex-align-center">
     <MenuItem name="resume" url="/resume" />
     <MenuItem name="Rpg Sheets" url="/rpg-sheets" />
     <MenuItem name="To Do List" url="/to-do-list" />

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ToDoListCreateItem from './createItem'
-import { ItemsList } from '../../components/ItemsList'
+import { ItemsList } from './components/ItemsList'
 
 export default class ToDoList extends Component {
   constructor() {

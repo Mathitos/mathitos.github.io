@@ -1,13 +1,22 @@
 @import '../../styles/themeColors.sass'
+@import '../../styles/defaultStyles.sass'
 
 .header
+  position: fixed
+  width: 100%
+  z-index: $z-header
+  margin: 1rem
   &__menu
     width: 30rem
-    &__logo
+    &__logo img
+      float: left
+      max-width: 5rem
 
     &__item
       background-color: $theme-color-light
       color: $theme-color-primary
+    &:hover
+      color: darken(#fff, 7%)
       &--selected
         background-color: $theme-color-primary
         color: $theme-color-light

@@ -22,20 +22,18 @@ export default class ToDoListCreateItem extends Component {
 
   render() {
     return (
-      <div className="todoListMain">
-        <div className="header">
-          <form onSubmit={this.submitForm}>
-            <input
-              placeholder="Task"
-              value={this.state.taskName}
-              onChange={this.handleChange}
-            />
-            <button type="submit" value="Submit">
-              {' '}
-              Add Task{' '}
-            </button>
-          </form>
-        </div>
+      <div >
+        <form onSubmit={this.submitForm}>
+          <input
+            placeholder="Task"
+            value={this.state.taskName}
+            onChange={this.handleChange}
+          />
+          <button type="submit" value="Submit">
+            {' '}
+            Add Task{' '}
+          </button>
+        </form>
       </div>
     )
   }
