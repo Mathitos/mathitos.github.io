@@ -1,8 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Main } from './main'
-import Header from '../../components/Header'
-import '../../styles/defaultStyles.sass'
+import Header from 'scenes/Header'
 
 export const App = () => {
   return (
