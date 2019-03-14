@@ -13,7 +13,7 @@ const Header = () => (
 
 const LogoComponent = () => (
   <NavLink to="/" className="header__menu__logo">
-    <img src="https://github.com/mathitos.png" />
+    {/* <img src="https://github.com/mathitos.png" /> */}
   </NavLink>
 )
 
