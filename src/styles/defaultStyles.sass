@@ -1,0 +1,47 @@
+@import 'themeColors'
+$theme-font:    verdana, sans-serif
+
+body, html
+  font: $theme-font
+  height: 100%
+  margin: 0
+  text-align: center
+
+
+.flex-inline
+  display: inline-flex
+
+
+.flex-row
+  flex-direction: row
+
+
+.flex-row-reverse
+  flex-direction: row-reverse
+
+
+.flex-justify-end
+  justify-content: end
+
+
+.container-full
+  height: 100%
+  width: 100%
+
+
+.container-auto
+  height: auto
+  width: auto
+
+.left-menu
+  height: 100%
+  width: 30rem
+  -webkit-transition: width 2s, height 4s /* For Safari 3.1 to 6.0 */
+  transition: width 2s, height 4s
+  background: $themeColor-Dark
+
+
+.sidebar
+  height: 100%
+  width: 20rem
+  background: $themeColor-Light
