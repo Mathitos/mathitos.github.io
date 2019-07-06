@@ -9,7 +9,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@material-ui/core": "^3.9.0",
+    "js-yaml": "^3.13.1",
     "normalize.css": "^8.0.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
@@ -24,6 +24,7 @@
     "css-loader": "^2.1.0",
     "eslint": "^5.15.1",
     "eslint-plugin-prettier": "^3.0.1",
+    "file-loader": "^4.0.0",
     "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "prettier": "1.16.4",

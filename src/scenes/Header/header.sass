@@ -10,26 +10,31 @@
   background-color: $theme-color-light
   border-radius: 1rem
   border-style: solid
-  border-width: 2px
+  border-width: 0.125rem
   border-color: $theme-color-primary
   &__menu
     width: 30rem
-    &__logo
-      float: left
-      height: 10rem
-      width: 10rem
-      max-height: 10rem
-      max-width: 10rem
-      transform: translateY(-3.5rem) translateX(3.5rem)
-      background-color: $theme-color-light
-      border-radius: 50%
-      &__image
-        margin: 5%
-        max-width: 90%
-        max-height: 90%
-        border-radius: 50%
-
-
+    display: flex
+    flex-direction: flex-row
+    justift-content: flex-end
+    align-items: center
+    &__title
+      width: 15rem
+      display: flex
+      flex-direction: flex-row
+      justift-content: flex-start
+      align-items: center
+      padding: 0 4rem
+      &__content
+        background-color: $theme-color-light
+        color: $theme-color-primary
+        height: 70%
+        padding: 0 2rem
+        margin: 0 0.2rem
+        text-decoration: none
+        display: flex
+        justift-content: center
+        align-items: center
     &__item
       background-color: $theme-color-light
       color: $theme-color-primary
@@ -39,6 +44,10 @@
       transition-duration: 0.4s
       padding: 0 2rem
       margin: 0 0.2rem
+      display: flex
+      flex-direction: flex-row
+      justift-content: flex-end
+      align-items: center
       &:hover
         background-color: $theme-color-primary
         color: $theme-color-light
